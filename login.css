@@ -1,0 +1,427 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: rgb(220,180,255);
+  background: linear-gradient(45deg, rgba(220,180,255,1) 0%, rgba(255,255,255,1) 47%);
+}
+
+.general-container{
+  height: 84vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ilustracao{
+  height: 70%;
+}
+
+.login-container{
+  margin-right: 5rem;
+  height: 70%;
+}
+
+.logo{
+  height: 9rem;
+  margin-left: 2rem;
+}
+
+.logo-wrapper{
+  margin: 0 auto;
+}
+
+form{
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"]{
+  background-color: rgb(231, 231, 231);
+  padding: .6rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+input[type="password"]{
+  background-color: rgb(231, 231, 231);
+  padding: .6rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+input[type="submit"]{
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .3s;
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(162, 100, 219);
+}
+
+.n-p-conta{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.n-p-conta a {
+  text-decoration: none;
+  color: blueviolet;
+  transition: .3s;
+}
+.n-p-conta a:hover{
+  color: rgb(185, 120, 245);
+}
+
+.e-senha{
+  text-decoration: none;
+  margin-left: 6rem;
+  color: rgb(111, 111, 111);
+  transition: .3s;
+}
+.e-senha:hover{
+  color: rgb(196, 196, 196);
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 3rem;
+  height: 4rem;
+  background-color: white;
+}
+
+.f-container-1{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.f-container-1 img{
+  height: 2rem;
+}
+
+.f-container-1 p{
+  margin-top: .6rem;
+  margin-left: .5rem;
+  
+  font-size: 1rem;
+}
+
+.f-container-2{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.f-container-2 a{
+  color: black;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.f-container-2 a:hover{
+  color: rgb(188, 188, 188);
+}
+
+
+@media (max-width: 768px){
+  html{
+    font-size: 50%;
+  }
+
+  .general-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17rem;
+  }
+  
+  .ilustracao{
+    display: none;
+  }
+  
+  .login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    height: 70%;
+    margin-bottom: 16rem;
+  }
+  .login-container h1{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+  .logo{
+    height: 30rem;
+  }
+  
+  
+  form{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"]{
+    background-color: rgb(231, 231, 231);
+    padding: 2rem;
+    font-size: 5rem;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  input[type="password"]{
+    background-color: rgb(231, 231, 231);
+    padding: 2rem;
+    font-size: 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+    border: none;
+  }
+  
+  input[type="submit"]{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    width: 20rem;
+    height: 10rem;
+    font-size: 5rem;
+    border-radius: 3rem;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .n-p-conta{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .n-p-conta a {
+    text-decoration: none;
+    color: blueviolet;
+  }
+  
+  .e-senha{
+    text-decoration: none;
+    font-size: 3.5rem;
+    margin-right: 5rem;
+  }
+
+
+
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  
+    margin-top: 3rem;
+    height: 35rem;
+    background-color: white;
+  }
+  
+  .f-container-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .f-container-1 img{
+    height: 5rem;
+    margin-top: 4rem;
+  }
+  
+  .f-container-1 p{
+    margin-top: .6rem;
+    margin-left: .5rem;
+    
+    font-size: 3rem;
+  }
+  
+  .f-container-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+ 
+  }
+  
+  .f-container-2 a{
+    color: black;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 3rem;
+  }
+}
+
+
+
+
+@media (max-width : 480px) {
+  html{
+    font-size: 30%;
+  }
+
+  .general-container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ilustracao{
+    display: none;
+  }
+  
+  .login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    height: 70%;
+  }
+  .login-container h1{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  .logo{
+    height: 30rem;
+  }
+  
+  
+  form{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"]{
+    background-color: rgb(231, 231, 231);
+    padding: 2rem;
+    font-size: 5rem;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  input[type="password"]{
+    background-color: rgb(231, 231, 231);
+    padding: 2rem;
+    font-size: 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+    border: none;
+  }
+  
+  input[type="submit"]{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    width: 20rem;
+    height: 10rem;
+    font-size: 5rem;
+    border-radius: 3rem;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .n-p-conta{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .n-p-conta a {
+    text-decoration: none;
+    color: blueviolet;
+  }
+  
+  .e-senha{
+    text-decoration: none;
+    font-size: 3.5rem;
+    margin-right: 5rem;
+  }
+
+
+
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  
+    margin-top: 3rem;
+    height: 53rem;
+    background-color: white;
+  }
+  
+  .f-container-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .f-container-1 img{
+    height: 10rem;
+    margin-top: 4rem;
+  }
+  
+  .f-container-1 p{
+    margin-top: .6rem;
+    margin-left: .5rem;
+    
+    font-size: 3rem;
+  }
+  
+  .f-container-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .f-container-2 a{
+    color: black;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 5rem;
+  }
+
+}

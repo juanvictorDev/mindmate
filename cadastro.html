@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="cadastro.css">
+  <title>MindMate|Cadastro</title>
+</head>
+<body>
+  <main class="general-container">
+    <img class="ilustracao" src="assets/Img login.png" alt="Ilustração de pessoa conversando com psicologo">
+
+    <div class="login-container">
+
+      <img class="logo" src="assets/Logo Roxo.png" alt="logo da empresa">
+
+      <h1>Cadastre-se</h1>
+      <p>Iremos ajudar você a diminuir os sintomas de TDAH</p>
+
+      <form action="login.html" id="myForm">
+        <div class="check">
+          <div><input type="radio" name="tipo" value="pessoa_fisica" checked> Usuário</div>
+          <div><input type="radio" name="tipo" value="pessoa_juridica"> Profissional</div>
+        </div>
+    
+        <div id="pessoaFisicaFields" style="display: block;">
+            
+            <input type="text" name="nome" placeholder="Digite seu nome"><br>
+            <input type="text" name="cpf" placeholder="Digite seu CPF"><br>
+            <input type="email" name="email" placeholder="Digite seu email"><br>
+            <input type="password" name="senha" placeholder="Digite sua Senha"><br>
+            <input id="ult-p" type="password" name="csenha" placeholder="Confirme sua Senha"><br>
+
+            <input type="submit" value="Crie sua conta">
+        </div>
+    
+        <div id="pessoaJuridicaFields" style="display: none;">
+          <input type="text" name="nome" placeholder="Digite seu nome"><br>
+          <input type="text" name="cpf" placeholder="Digite seu CPF"><br>
+
+          <div class="select-prof">
+            <p>Seleciona a sua profissão</p>
+            
+            <select name="prof">
+              <option value=""></option>
+              <option value="opcao1">Psicólogo</option>
+              <option value="opcao2">Psiquiatra</option>
+              <option value="opcao3">Psicoterapeuta</option>
+              <option value="opcao4">Neurologista</option>
+              <option value="opcao5">Neuropediatra</option>
+            </select>
+          </div>
+
+          <input type="text" name="regpro" placeholder="Digite seu Registro Profissional"><br>
+          <input type="email" name="email" placeholder="Digite seu email"><br>
+          <input type="password" name="senha" placeholder="Digite sua Senha"><br>
+          <input id="ult-p" type="password" name="csenha" placeholder="Confirme sua Senha"><br>
+
+          <input id="#subJ" type="submit" value="Crie sua conta">
+        </div>
+    
+    </form>
+    
+      <p class="j-p-conta"><b>já possui uma conta?</b> <a href="login.html"><b>Login</b></a></p>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="f-container-1">
+      <img src="assets/Logo vazado cinza croped.png" alt="logo da mindmate">
+      <p>©mindmate 2023</p>
+    </div>
+    <div class="f-container-2">
+      <a href="">Termos e condições</a>
+      <a href="">Política de Privacidade</a>
+      <a href="">Suporte</a>
+    </div>
+  </footer>
+</body>
+  <script>
+    document.getElementById("myForm").addEventListener("change", function () {
+    var selectedOption = document.querySelector('input[name="tipo"]:checked').value;
+
+    if (selectedOption === "pessoa_fisica") {
+        document.getElementById("pessoaFisicaFields").style.display = "block";
+        document.getElementById("pessoaJuridicaFields").style.display = "none";
+    } else if (selectedOption === "pessoa_juridica") {
+        document.getElementById("pessoaFisicaFields").style.display = "none";
+        document.getElementById("pessoaJuridicaFields").style.display = "block";
+    }
+});
+  </script>
+</html>
